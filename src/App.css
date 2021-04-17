@@ -23,7 +23,7 @@
   align-self: center;
 }
 
-.user-icon-container {
+.user-settings-container {
   grid-column: 2;
   display: inline-flex;
   flex-direction: row;
@@ -35,11 +35,11 @@
   opacity: 60%;
 }
 
-.user-icon-container > p {
+.user-settings-container > p {
   margin-right: 10px;
 }
 
-.user-icon-container:hover {
+.user-settings-container:hover {
   opacity: 100%;
 }
 
