@@ -2,13 +2,13 @@ import React from 'react'
 
 export const Dashboard = () => {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <div className=".item-half">
-        <div>
-          <p>Look, some graphs (soon)</p>
-        </div>
-      </div>
+    <>
+    <div className="item-full">
+      <h1 style={{textAlign:"center"}}>Dashboard</h1>
     </div>
+      <div className=".item-half">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dicta autem quod temporibus minus repellat ea ad voluptates ducimus excepturi sequi eos beatae praesentium incidunt corrupti, tempore dolore optio reiciendis?</p>
+      </div>
+    </>
   )
 }
