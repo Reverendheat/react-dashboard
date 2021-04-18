@@ -1,5 +1,6 @@
-import React, { MouseEventHandler,MouseEvent } from 'react';
+import React, { MouseEvent } from 'react';
 import "../App.css";
+
 export const Sidebar = () => {
   let handleClick = (e:MouseEvent): void => {
     console.log(e.currentTarget.textContent);

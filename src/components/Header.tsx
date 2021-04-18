@@ -1,5 +1,5 @@
 import React, {MouseEvent} from 'react';
-
+import userLogo from "../images/default_user_logo.png";
 import "../App.css";
 
 export const Header = () => {
@@ -13,7 +13,7 @@ export const Header = () => {
       </div>
       <span onClick={handleClick} className="user-settings-container">
         <p>User</p>
-        <img className="user-icon" src="default_user_logo.png" alt="user image" />
+        <img className="user-icon" src={userLogo} alt="user" />
       </span>
     </header>
   )
