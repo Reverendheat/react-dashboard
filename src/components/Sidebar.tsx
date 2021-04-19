@@ -1,4 +1,5 @@
-import React, { MouseEvent } from 'react';
+import React, { MouseEvent, useState } from 'react';
+
 import "../App.css";
 
 export const Sidebar = () => {
