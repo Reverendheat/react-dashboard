@@ -1,19 +1,32 @@
-import React, { MouseEvent, useState } from 'react';
-
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import "../App.css";
 
 export const Sidebar = () => {
-  let handleClick = (e:MouseEvent): void => {
-    console.log(e.currentTarget.textContent);
-  }
   return (
     <nav className="side-nav-bar">
-        <ul className="nav-bar-list">
-          <li className="nav-item" onClick={handleClick}>Dashboard</li>
-          <li className="nav-item" onClick={handleClick}>Item List</li>
-          <li className="nav-item" onClick={handleClick}>Tools</li>
-          <li className="nav-item" onClick={handleClick}>Administration</li>
-        </ul>
-      </nav>
+      <ul className="nav-bar-list">
+        <NavLink to="/dashboard" className="nav-item" activeStyle={{
+          fontWeight: "bold",
+        }}>
+          <li>Dashboard</li>
+        </NavLink>
+        <NavLink to="/items" className="nav-item" activeStyle={{
+          fontWeight: "bold",
+        }}>
+          <li>Item List</li>
+        </NavLink>
+        <NavLink to="/tools" className="nav-item" activeStyle={{
+          fontWeight: "bold",
+        }}>
+          <li>Tools</li>
+        </NavLink>
+        <NavLink to="/administration" className="nav-item" activeStyle={{
+          fontWeight: "bold",
+        }}>
+          <li>Administration</li>
+        </NavLink>
+      </ul>
+    </nav>
   )
 }

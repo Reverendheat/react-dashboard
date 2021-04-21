@@ -65,14 +65,9 @@
 }
 .nav-item {
   padding: 10px;
-  transition: opacity 0.4s;
+  color: black;
   cursor: pointer;
-  opacity: 0.5;
-  user-select: none;
-}
-
-.nav-item:hover {
-  opacity: 1;
+  text-decoration: none;
 }
 
 .main-container {
