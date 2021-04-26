@@ -55,10 +55,11 @@
   display: flex;
 }
 
-.nav-bar-list {
+.nav-bar-container {
+  display: flex;
   flex: 1;
   width: 100%;
-  padding: 0px;
+  padding-top: 15px;
   flex-direction: column;
   list-style-type: none;
   text-align: center;

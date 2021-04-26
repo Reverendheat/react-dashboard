@@ -1,20 +1,61 @@
-import React, {MouseEvent} from 'react';
+import React, { MouseEvent, useContext } from 'react';
 import userLogo from "../images/default_user_logo.png";
 import "../App.css";
 
+import styled from 'styled-components';
+
+const StyledHeader = styled.header`
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  box-shadow: 3px 3px 5px 6px #ccc;
+`
+
+const StyledLogo = styled.div`
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+`
+
+const StyledSpan = styled.span`
+  grid-column: 2;
+  display: inline-flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  padding: 0.5em;
+  align-self: center;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+`
+
+const StyledP = styled(StyledSpan)`
+  margin-right: 10px;
+`
+
+const StyledImage = styled.img`
+  max-height: 50px;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+`
+
 export const Header = () => {
-  let handleClick = (e:MouseEvent): void => {
+  let handleClick = (e: MouseEvent): void => {
     console.log("One day, i'll open a context menu");
   }
   return (
-    <header className="header-container">
-      <div className="logo">
+    <StyledHeader>
+      <StyledLogo>
         <h1>Director</h1>
-      </div>
-      <span onClick={handleClick} className="user-settings-container">
-        <p>User</p>
-        <img className="user-icon" src={userLogo} alt="user" />
-      </span>
-    </header>
+      </StyledLogo>
+      <StyledSpan onClick={handleClick}>
+        <StyledP>User</StyledP>
+        <StyledImage src={userLogo} alt="user" />
+      </StyledSpan>
+    </StyledHeader>
   )
 }
