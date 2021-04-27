@@ -1,6 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
+//Single file styling example
+import * as S from "../styles/styles";
+
+//Component based styling
 const StyledFooter = styled.footer`
   grid-area: footer;
   display: flex;
@@ -11,8 +15,8 @@ const StyledFooter = styled.footer`
 export const Footer = () => {
   let copyrightDate = new Date()
   return (
-    <StyledFooter>
+    <S.Footer>
       Copyright ReverendHeat {copyrightDate.getFullYear()}
-    </StyledFooter>
+    </S.Footer>
   )
 }
