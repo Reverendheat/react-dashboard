@@ -12,10 +12,13 @@ export const Main = () => {
   return (
     <StyledMain>
       <Route exact path="/">
-        <Redirect to="/dashboard" />
+        <Redirect to="/react-dashboard/dashboard" />
       </Route>
-      <Route exact path="/dashboard" component={Dashboard} />
-      <Route exact path="/tools" component={Tools} />
+      <Route exact path="/react-dashboard">
+        <Redirect to="/react-dashboard/dashboard" />
+      </Route>
+      <Route exact path="/react-dashboard/dashboard" component={Dashboard} />
+      <Route exact path="/react-dashboard/tools" component={Tools} />
     </StyledMain>
   )
 }

@@ -6,20 +6,20 @@ export const Sidebar = () => {
   return (
     <nav className="side-nav-bar">
       <div className="nav-bar-container">
-        <NavLink to="/dashboard" className="nav-item" activeStyle={{
+        <NavLink to="/react-dashboard/dashboard" className="nav-item" activeStyle={{
           fontWeight: "bold",
         }}>
           Dashboard
         </NavLink>
-        <NavLink to="/items" className="nav-item" activeStyle={{
+        <NavLink to="/react-dashboard/items" className="nav-item" activeStyle={{
           fontWeight: "bold",
         }}>Item List
         </NavLink>
-        <NavLink to="/tools" className="nav-item" activeStyle={{
+        <NavLink to="/react-dashboard/tools" className="nav-item" activeStyle={{
           fontWeight: "bold",
         }}>Tools
         </NavLink>
-        <NavLink to="/administration" className="nav-item" activeStyle={{
+        <NavLink to="/react-dashboard/administration" className="nav-item" activeStyle={{
           fontWeight: "bold",
         }}>Administration
         </NavLink>

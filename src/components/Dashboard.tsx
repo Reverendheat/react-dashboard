@@ -1,4 +1,5 @@
 import React from 'react'
+import { Card } from './Card';
 
 export const Dashboard = () => {
   return (
@@ -7,30 +8,12 @@ export const Dashboard = () => {
         <h1>Dashboard</h1>
       </div>
       <div className="dash-container">
-        <div className="card-small">
-          <h3>Small</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dicta autem quod temporibus minus repellat ea ad voluptates ducimus excepturi sequi eos beatae praesentium incidunt corrupti, tempore dolore optio reiciendis?</p>
-        </div>
-        <div className="card-small">
-          <h3>Small</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dicta autem quod temporibus minus repellat ea ad voluptates ducimus excepturi sequi eos beatae praesentium incidunt corrupti, tempore dolore optio reiciendis?</p>
-        </div>
-        <div className="card-small">
-          <h3>Small</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dicta autem quod temporibus minus repellat ea ad voluptates ducimus excepturi sequi eos beatae praesentium incidunt corrupti, tempore dolore optio reiciendis?</p>
-        </div>
-        <div className="card-medium">
-          <h3>Medium</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dicta autem quod temporibus minus repellat ea ad voluptates ducimus excepturi sequi eos beatae praesentium incidunt corrupti, tempore dolore optio reiciendis?</p>
-        </div>
-        <div className="card-medium">
-          <h3>Medium</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dicta autem quod temporibus minus repellat ea ad voluptates ducimus excepturi sequi eos beatae praesentium incidunt corrupti, tempore dolore optio reiciendis?</p>
-        </div>
-        <div className="card-large">
-          <h3>Large</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dicta autem quod temporibus minus repellat ea ad voluptates ducimus excepturi sequi eos beatae praesentium incidunt corrupti, tempore dolore optio reiciendis?</p>
-        </div>
+        <Card size="small" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab sunt quidem architecto laborum quod fugit nesciunt? Cum labore mollitia quasi temporibus odit earum unde tenetur, aliquid rem quo voluptatem nam?" title="Small Card" />
+        <Card size="small" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab sunt quidem architecto laborum quod fugit nesciunt? Cum labore mollitia quasi temporibus odit earum unde tenetur, aliquid rem quo voluptatem nam?" title="Small Card" />
+        <Card size="small" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab sunt quidem architecto laborum quod fugit nesciunt? Cum labore mollitia quasi temporibus odit earum unde tenetur, aliquid rem quo voluptatem nam?" title="Small Card" />
+        <Card size="medium" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab sunt quidem architecto laborum quod fugit nesciunt? Cum labore mollitia quasi temporibus odit earum unde tenetur, aliquid rem quo voluptatem nam?" title="Small Medium" />
+        <Card size="medium" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab sunt quidem architecto laborum quod fugit nesciunt? Cum labore mollitia quasi temporibus odit earum unde tenetur, aliquid rem quo voluptatem nam?" title="Small Medium" />
+        <Card size="large" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab sunt quidem architecto laborum quod fugit nesciunt? Cum labore mollitia quasi temporibus odit earum unde tenetur, aliquid rem quo voluptatem nam?" title="Small Large" />
       </div>
     </>
   )
