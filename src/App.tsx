@@ -21,6 +21,18 @@ const StyledApp = styled.div`
     "header  header"
     "nav    main"
     "empty footer";
+  @media (max-width: 768px) {
+    font-family: "Roboto", serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr 5fr 70px;
+    height: 100vh;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
 `
 
 function App() {

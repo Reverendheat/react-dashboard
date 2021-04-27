@@ -1,5 +1,5 @@
 import React, { MouseEvent, useContext } from 'react';
-import userLogo from "../images/default_user_logo.png";
+import userLogo from "../images/default_user_avatar.png";
 import "../App.css";
 
 import styled from 'styled-components';
@@ -17,6 +17,10 @@ const StyledLogo = styled.div`
   align-self: center;
 `
 
+const StyledUserDropdown = styled.div`
+  display: none;
+`
+
 const StyledSpan = styled.span`
   grid-column: 2;
   display: inline-flex;
@@ -29,6 +33,14 @@ const StyledSpan = styled.span`
   opacity: 0.6;
   &:hover {
     opacity: 1;
+  }
+  &:hover ${StyledUserDropdown} {
+    display: block;
+    color: green;
+    ul {
+      padding: 0px;
+      list-style-type: none;
+    }
   }
 `
 
@@ -43,6 +55,7 @@ const StyledImage = styled.img`
   border-radius: 50%;
 `
 
+
 export const Header = () => {
   let handleClick = (e: MouseEvent): void => {
     console.log("One day, i'll open a context menu");
@@ -50,11 +63,17 @@ export const Header = () => {
   return (
     <StyledHeader>
       <StyledLogo>
-        <h1>Director</h1>
+        <h1>Dashboard</h1>
       </StyledLogo>
       <StyledSpan onClick={handleClick}>
         <StyledP>User</StyledP>
         <StyledImage src={userLogo} alt="user" />
+        <StyledUserDropdown>
+          <ul>
+            <li>Settings</li>
+            <li>Logout</li>
+          </ul>
+        </StyledUserDropdown>
       </StyledSpan>
     </StyledHeader>
   )

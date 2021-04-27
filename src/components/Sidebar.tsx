@@ -11,17 +11,10 @@ export const Sidebar = () => {
         }}>
           Dashboard
         </NavLink>
-        <NavLink to="/react-dashboard/items" className="nav-item" activeStyle={{
-          fontWeight: "bold",
-        }}>Item List
-        </NavLink>
         <NavLink to="/react-dashboard/tools" className="nav-item" activeStyle={{
           fontWeight: "bold",
-        }}>Tools
-        </NavLink>
-        <NavLink to="/react-dashboard/administration" className="nav-item" activeStyle={{
-          fontWeight: "bold",
-        }}>Administration
+        }}>
+          Tools
         </NavLink>
       </div>
     </nav>
