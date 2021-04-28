@@ -1,8 +1,8 @@
 import React, { MouseEvent, useContext } from 'react';
 import userLogo from "../images/default_user_avatar.png";
-import "../App.css";
 
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 const StyledHeader = styled.header`
   grid-area: header;
@@ -19,9 +19,12 @@ const StyledLogo = styled.div`
 
 const StyledUserDropdown = styled.div`
   display: none;
+  margin-top: 50px;
+  width: 150px;
 `
 
 const StyledSpan = styled.span`
+  position: relative;
   grid-column: 2;
   display: inline-flex;
   flex-direction: row;
@@ -35,11 +38,19 @@ const StyledSpan = styled.span`
     opacity: 1;
   }
   &:hover ${StyledUserDropdown} {
+    position: absolute;
     display: block;
-    color: green;
+    color: #2b90c8;
     ul {
       padding: 0px;
       list-style-type: none;
+      li {
+        padding: 5px;
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
   }
 `

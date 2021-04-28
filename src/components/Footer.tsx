@@ -15,8 +15,8 @@ const StyledFooter = styled.footer`
 export const Footer = () => {
   let copyrightDate = new Date()
   return (
-    <S.Footer>
+    <StyledFooter>
       Copyright ReverendHeat {copyrightDate.getFullYear()}
-    </S.Footer>
+    </StyledFooter>
   )
 }

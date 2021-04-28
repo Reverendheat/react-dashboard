@@ -24,7 +24,7 @@ export const Card: React.FC<CardProps> = (CardProps) => {
     padding: 0.5em;
     box-shadow: 3px 3px 5px 6px rgb(202, 202, 202);
     &:hover {
-        background-color: mistyrose;
+        background-color: #2b90c8;
     }
     @media (max-width: 768px) {
         width: 100%;
